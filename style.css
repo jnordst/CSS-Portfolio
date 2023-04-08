@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* HTML ------------------------------------------------------- */
+:root {
+     --blue: #3498db;
+}
+
+html {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans serif;
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.8rem;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Nav -------------------------------------------------------- */
+nav {
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar a:hover {
+    color: #62ad5d;
+    transition: all ease 0.3s;
+}
+
+/* Header ----------------------------------------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 8em auto;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+header .image-container img {
+    height: 230px;
+    width: 230px;
+}
+
+header a {
+    padding: 1em;
+    width: 80px;
+    text-align: center;
+    background-color: var(--blue);
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 2em;
+}
+
+header a:hover {
+    background-color: #2980b9;
+}
+
+/* Projects --------------------------------------------------- */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 8em auto;
+    gap: 20px;
+
+}
+
+.project {
+    background-image: url(./assets/nord-games-bg.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 35%;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* white color with 50% transparency */
+}
+
+.project-header {
+    color: var(--blue);
+    font-size: 1.4rem;
+    line-height: 1.3;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.project-title {
+    font-size: 2.4rem;
+    line-height: 1.3;
+    font-weight: 500;
+    color: #fff;
+}
+
+.project-title:hover {
+    color: var(--blue);
+    transition: all ease 0.3s;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.project-text p {
+    min-height: 68px;
+    color: #9b9b9b;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+
+.project-read-more {
+    color: #fff;
+}
+
+.project-read-more:hover {
+    color: var(--blue);
+    transition: all ease 0.3s;
+}
+
+.wide {
+    width: 60%;
+}
+
+.small {
+    width: 35%;
+}
+
+
+/*  ------------------------------------------------------ */
