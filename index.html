@@ -13,21 +13,21 @@
 <body>
     <nav class="navbar">
         <ul class="navbar-nav">
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item"><a href="#">About</a></li>
-            <li class="nav-item"><a href="#">Projects</a></li>
-            <li class="nav-item"><a href="#">Contact</a></li>
+            <li class="nav-item"><a href="#header">Home</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <header class="container">
+    <header id="header" class="container">
         <div class="header-text">
             <h1>Hello, I'm Jacob!</h1>
             <p>I'm a Computer Programming student at <a href="https://www.georgiancollege.ca/">Georgian College</a> with
                 over 2 years of programming experience.</p>
             <p>Seeking a fun, challenging, and dynamic entry level programming position where I can hone and utilize my
                 skills in object oriented programming, and web development.</p>
-            <a class="button" href="#">Hire Me</a>
+            <button>Hire Me</button>
         </div>
 
         <div class="image-container">
@@ -35,140 +35,175 @@
         </div>
     </header>
 
-    <section class="portfolio container">
-        <div class="projects-header">
-            <h2>My Recent Work</h2>
-        </div>
+    <main>
+        <section id="projects" class="portfolio container">
+            <div class="projects-header">
+                <h2>My Recent Work</h2>
+            </div>
 
-        <div class="projects flex-row-jc-ai">
-            <div class="project wide" style="background-image: url(./assets/nord-games-bg-large.png)">
-                <div class="project-container flex-column-jc-ai">
-                    <div class="project-text">
-                        <h3 class="project-header">WEB DEVELOPMENT</h3>
-                        <a href="https://nordgames.netlify.app/" target="_blank" class="project-title">nordGames</a>
-                        <p class="project-desc">A reactive ecommerce website devloped using only HTML, CSS and
-                            Javascript in likeness to Humble Bundle or Steam. My first website!</p>
-                        <a href="https://nordgames.netlify.app/" class="project-read-more">Go to Site</a>
+            <div class="projects flex-row-jc-ai">
+                <div class="project wide" style="background-image: url(./assets/nord-games-bg-large.png)">
+                    <div class="project-container flex-column-jc-ai">
+                        <div class="project-text">
+                            <h3 class="project-header">WEB DEVELOPMENT</h3>
+                            <a href="https://nordgames.netlify.app/" target="_blank" class="project-title">nordGames</a>
+                            <p class="project-desc">A reactive ecommerce website devloped using only HTML, CSS and
+                                Javascript in likeness to Humble Bundle or Steam. My first website!</p>
+                            <a href="https://nordgames.netlify.app/" class="project-read-more">Go to Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project small" style="background-image: url(./assets/lazehrs-small.png)">
+                    <div class="project-container flex-column-jc-ai">
+                        <div class="project-text">
+                            <h3 class="project-header">APP DEVELOPMENT</h3>
+                            <a href="https://nordgames.netlify.app/" target="_blank" class="project-title">Lazehrs</a>
+                            <p>A Java based shopping assistant application that allows users to share locations of items
+                                in
+                                stores.</p>
+                            <a href="https://nordgames.netlify.app/" class="project-read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project small" style="background-image: url(./assets/css-zem-garden-small.png)">
+                    <div class="project-container flex-column-jc-ai">
+                        <div class="project-text">
+                            <h3 class="project-header">WEB DEVELOPMENT</h3>
+                            <a href="https://nordgames.netlify.app/" target="_blank" class="project-title">CSS Zen
+                                Garden</a>
+                            <p>A common CSS challenge involving styling a pre-existing website in an interesting and fun
+                                layout.</p>
+                            <a href="https://nordgames.netlify.app/" class="project-read-more">Go to Site</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project wide" style="background-image: url(./assets/project-merc-large.png)">
+                    <div class="project-container flex-column-jc-ai">
+                        <div class="project-text">
+                            <h3 class="project-header">GAME DEVELOPMENT</h3>
+                            <a href="#" target="_blank" class="project-title">Project MERC</a>
+                            <p>A 3d turn based action RPG developed in Unity using C#. A hobby project that I
+                                occasionally
+                                work on.</p>
+                            <a href="#" class="project-read-more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="about container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>My name is Jacob Nordstrom. I'm an experienced and motivated programming student with over two years
+                    of
+                    expertise developing games in Unity using C#.</p>
+                <p>I love helping and teaching others, sovling unique problems, and watching my personal growth. Nothing
+                    feels better than starting with an empty project and finishing with something cool.</p>
+            </div>
+
+            <div class="image-container">
+                <img src="./assets/icon.png" alt="">
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+            <div class="skills flex-row-jc-ai">
+                <div class="skill-icon flex-column-jc-ai">
+                    <i class="fa-brands fa-html5"></i>
+                    <div class="fill-bar-container">
+                        <div class="fill-bar" style="width: 40%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-icon flex-column-jc-ai">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <div class="fill-bar-container">
+                        <div class="fill-bar" style="width: 40%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-icon flex-column-jc-ai">
+                    <i class="fa-brands fa-js"></i>
+                    <div class="fill-bar-container">
+                        <div class="fill-bar" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-icon flex-column-jc-ai">
+                    <i class="fa-brands fa-php"></i>
+                    <div class="fill-bar-container">
+                        <div class="fill-bar" style="width: 30%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-icon flex-column-jc-ai">
+                    <i class="fa-brands fa-python"></i>
+                    <div class="fill-bar-container">
+                        <div class="fill-bar" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-icon flex-column-jc-ai">
+                    <i class="fa-solid fa-database"></i>
+                    <div class="fill-bar-container">
+                        <div class="fill-bar" style="width: 25%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-icon flex-column-jc-ai">
+                    <i class="fa-brands fa-java"></i>
+                    <div class="fill-bar-container">
+                        <div class="fill-bar" style="width: 60%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-icon flex-column-jc-ai">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-c"></i> <i class="fa-solid fa-hashtag"></i>
+                    </div>
+                    <div class="fill-bar-container">
+                        <div class="fill-bar" style="width: 75%;"></div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="project small" style="background-image: url(./assets/lazehrs-small.png)">
-                <div class="project-container">
-                    <div class="project-text">
-                        <h3 class="project-header">APP DEVELOPMENT</h3>
-                        <a href="https://nordgames.netlify.app/" target="_blank" class="project-title">Lazehrs</a>
-                        <p>A Java based shopping assistant application that allows users to share locations of items in
-                            stores.</p>
-                        <a href="https://nordgames.netlify.app/" class="project-read-more">Read More</a>
+        <section id="contact" class="contact container">
+            <h2>Let's Connect!</h2>
+            <div class="contact-container">
+                <div class="connect">
+                    <p>Whether you just want to connect or if you have work and you'd like to talk business, you can
+                        send me a
+                        message or contact me here.</p>
+                    <div class="social-media">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-github"></i>
                     </div>
                 </div>
-            </div>
 
-            <div class="project small" style="background-image: url(./assets/css-zem-garden-small.png)">
-                <div class="project-container">
-                    <div class="project-text">
-                        <h3 class="project-header">WEB DEVELOPMENT</h3>
-                        <a href="https://nordgames.netlify.app/" target="_blank" class="project-title">CSS Zen
-                            Garden</a>
-                        <p>A common CSS challenge involving styling a pre-existing website in an interesting and fun
-                            layout.</p>
-                        <a href="https://nordgames.netlify.app/" class="project-read-more">Go to Site</a>
-                    </div>
-                </div>
-            </div>
+                <div class="form-container">
+                    <p>Send an email</p>
 
-            <div class="project wide" style="background-image: url(./assets/project-merc-large.png)">
-                <div class="project-container">
-                    <div class="project-text">
-                        <h3 class="project-header">GAME DEVELOPMENT</h3>
-                        <a href="#" target="_blank" class="project-title">Project MERC</a>
-                        <p>A 3d turn based action RPG developed in Unity using C#. A hobby project that I occasionally
-                            work on.</p>
-                        <a href="#" class="project-read-more">Read More</a>
-                    </div>
+                    <form>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
+        </section>
+    </main>
 
-        </div>
-    </section>
-
-    <section class="about container">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>My name is Jacob Nordstrom. I'm an experienced and motivated programming student with over two years of
-                expertise developing games in Unity using C#.</p>
-            <p>I love helping and teaching others, sovling unique problems, and watching my personal growth. Nothing
-                feels better than starting with an empty project and finishing with something cool.</p>
-        </div>
-
-        <div class="image-container">
-            <img src="./assets/icon.png" alt="">
-        </div>
-    </section>
-
-    <section class="container">
-        <div>
-            <h2>Skills</h2>
-        </div>
-
-        <div class="skills flex-row-jc-ai">
-            <div class="skill-icon flex-column-jc-ai">
-                <i class="fa-brands fa-html5"></i>
-                <div class="fill-bar-container">
-                    <div class="fill-bar" style="width: 40%;"></div>
-                </div>
-            </div>
-    
-            <div class="skill-icon flex-column-jc-ai">
-                <i class="fa-brands fa-css3-alt"></i>
-                <div class="fill-bar-container">
-                    <div class="fill-bar" style="width: 40%;"></div>
-                </div>
-            </div>
-    
-            <div class="skill-icon flex-column-jc-ai">
-                <i class="fa-brands fa-js"></i>
-                <div class="fill-bar-container">
-                    <div class="fill-bar" style="width: 50%;"></div>
-                </div>
-            </div>
-    
-            <div class="skill-icon flex-column-jc-ai">
-                <i class="fa-brands fa-python"></i>
-                <div class="fill-bar-container">
-                    <div class="fill-bar" style="width: 50%;"></div>
-                </div>
-            </div>
-    
-            <div class="skill-icon flex-column-jc-ai">
-                <i class="fa-solid fa-database"></i>
-                <div class="fill-bar-container">
-                    <div class="fill-bar" style="width: 25%;"></div>
-                </div>
-            </div>
-    
-            <div class="skill-icon flex-column-jc-ai">
-                <i class="fa-brands fa-java"></i>
-                <div class="fill-bar-container">
-                    <div class="fill-bar" style="width: 60%;"></div>
-                </div>
-            </div>
-    
-            <div class="skill-icon flex-column-jc-ai">
-                <div>
-                    <i class="fa-sharp fa-solid fa-c"></i> <i class="fa-solid fa-hashtag"></i>
-                </div>
-                <div class="fill-bar-container">
-                    <div class="fill-bar" style="width: 75%;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact container">
-
-    </section>
+    <footer class="container flex-row-jc-ai">
+        <a href="#header">Back to Top</a>
+    </footer>
 </body>
 
 </html>

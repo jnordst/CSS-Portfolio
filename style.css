@@ -44,6 +44,23 @@ li {
     list-style: none;
 }
 
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: var(--secondary);
+}
+
 .container {
     margin: 8em auto;
     width: 70%;
@@ -100,13 +117,15 @@ header .image-container img {
 }
 
 header .button {
-    padding: 1em;
-    width: 80px;
-    text-align: center;
     background-color: var(--primary);
-    border-radius: 8px;
-    color: #fff;
-    margin-top: 2em;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
 }
 
 header .button:hover {
@@ -239,11 +258,54 @@ header .button:hover {
 }
 
 /* Contact ---------------------------------------------------- */
+.contact {
+    display: flex;
+    flex-direction: column;
+}
 
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.connect {
+    width: 30%;
+}
 
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2em;
+    font-size: 2.8rem;
+}
 
+.form-container {
+    width: 60%;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
 
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: 'Poppins', sans serif;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
 
-/* Footer ----------------------------------------------------- */
+textarea {
+    height: 100px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
