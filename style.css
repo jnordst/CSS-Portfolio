@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('assets/OpenSans-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* HTML ------------------------------------------------------- */
-:root {
+:root { 
     --primary: #3498db;
     --secondary: #2980b9;
 }
 
-html {
+html { /* Element Selector */
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -16,10 +22,12 @@ html {
 
 h1 {
     font-size: 3.8rem;
+    font-family: 'open_sansregular', sans-serif; /* kinda prefer Poppins.. */
 }
 
 h2 {
     font-size: 3rem;
+    font-family: 'open_sansregular', sans-serif;
 }
 
 p {
@@ -32,11 +40,11 @@ a {
     font-size: 1.8rem;
 }
 
-p>a {
+p > a { /* Child Selector */
     color: var(--primary);
 }
 
-p>a:hover {
+p > a:hover { 
     color: var(--secondary);
 }
 
@@ -50,7 +58,7 @@ li {
 }
 
 button,
-.button {
+.button { /* Selector List */
     background-color: var(--primary);
     color: white;
     border: none;
@@ -64,11 +72,11 @@ button,
 }
 
 button:hover,
-.button:hover {
+.button:hover { /* Psuedo Selector */
     background-color: var(--secondary);
 }
 
-.container {
+.container { /* Class Selector */
     margin: 0 auto;
     width: 70%;
 }
@@ -118,7 +126,7 @@ header {
     width: 60%;
 }
 
-header .image-container img {
+header .image-container img { /* Descendent Selector */
     height: 230px;
     width: 230px;
 }
@@ -218,7 +226,7 @@ header .button:hover {
 }
 
 /* About ------------------------------------------------------ */
-#about {
+#about { /* ID Selector */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -267,7 +275,6 @@ header .button:hover {
     left: 0;
     height: 100%;
     background-color: var(--primary);
-    transition: width 0.5s ease;
 }
 
 /* Contact ---------------------------------------------------- */
@@ -332,6 +339,7 @@ textarea:focus {
     border-color: var(--primary);
 }
 
+/* Media ------------------------------------------------------ */
 @media screen and (width < 1100px) {
     .projects {
         flex-direction: column;
@@ -360,22 +368,24 @@ textarea:focus {
     }
 
     .container,
+    .header-text,
     .about-text,
     .connect,
-    .form-container {
+    .form-container
+     {
         width: 90%;
     }
 
-    .about-me,
     header,
     #projects,
+    .about-me,
     #contact,
     .contact-container {
         flex-direction: column;
-        gap: 2em;
         justify-content: center;
         align-items: center;
         text-align: center;
+        gap: 2em;
     }
 
     button,
