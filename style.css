@@ -40,11 +40,17 @@ p>a:hover {
     color: var(--secondary);
 }
 
+section {
+    min-height: 100vh;
+}
+
+/* Personal --------------------------------------------------- */
 li {
     list-style: none;
 }
 
-button {
+button,
+.button {
     background-color: var(--primary);
     color: white;
     border: none;
@@ -57,12 +63,13 @@ button {
     margin-top: 20px;
 }
 
-button:hover {
+button:hover,
+.button:hover {
     background-color: var(--secondary);
 }
 
 .container {
-    margin: 8em auto;
+    margin: 0 auto;
     width: 70%;
 }
 
@@ -79,7 +86,6 @@ button:hover {
     align-items: center;
 }
 
-
 /* Nav -------------------------------------------------------- */
 nav {
     position: fixed;
@@ -93,7 +99,7 @@ nav {
     padding: 0;
 }
 
-.navbar a:hover {
+nav a:hover {
     color: var(--primary);
     transition: all ease 0.3s;
 }
@@ -103,6 +109,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 100vh;
 }
 
 .header-text {
@@ -211,11 +218,17 @@ header .button:hover {
 }
 
 /* About ------------------------------------------------------ */
-.about {
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-me {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 8em auto;
 }
 
 .about-text {
@@ -224,7 +237,7 @@ header .button:hover {
     width: 60%;
 }
 
-.about .image-container img {
+.about-me .image-container img {
     height: 230px;
     width: 230px;
 }
@@ -261,6 +274,7 @@ header .button:hover {
 .contact {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .contact-container {
@@ -276,7 +290,15 @@ header .button:hover {
     display: flex;
     justify-content: space-between;
     margin: 0 2em;
+}
+
+.social-media i {
     font-size: 2.8rem;
+    color: var(--primary)
+}
+
+.social-media i:hover {
+    color: var(--secondary)
 }
 
 .form-container {
@@ -308,4 +330,61 @@ input[type="email"]:focus,
 textarea:focus {
     outline: none;
     border-color: var(--primary);
+}
+
+@media screen and (width < 1100px) {
+    .projects {
+        flex-direction: column;
+    }
+
+    .small,
+    .wide {
+        width: 80%;
+    }
+}
+
+@media screen and (width < 700px) {
+    nav {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        margin: 2em auto;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .container,
+    .about-text,
+    .connect,
+    .form-container {
+        width: 90%;
+    }
+
+    .about-me,
+    header,
+    #projects,
+    #contact,
+    .contact-container {
+        flex-direction: column;
+        gap: 2em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    button,
+    .button {
+        align-self: center;
+    }
+
+    .social-media {
+        justify-content: center;
+        gap: 2em;
+    }
 }
